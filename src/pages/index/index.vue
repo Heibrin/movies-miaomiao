@@ -2,28 +2,36 @@
   <div class="main-index">
     <!-- 头部 -->
     <div class="header">
-      <Header/>
+      <Headers />
       <!-- <router-view/> -->
+      <!-- 主体 -->
+      <div class="container">
+        
+        <div class="content">
+          <div class="aside"></div>
+          <div class="main"></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 <script>
-import Header from './header.vue'
+import Headers from "./header.vue";
 export default {
   name: "index",
   data() {
     return {};
   },
-  components:{
-      Header,
-  }
+  components: {
+    Headers,
+  },
 };
 </script>
 <style >
-.header{
-    /* float: left; */
-    width: 128px;
-    margin-left: 10px;
-    height: 80px;
+.header {
+  /* float: left; */
+  width: 128px;
+  margin-left: 10px;
+  height: 80px;
 }
 </style>
